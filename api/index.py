@@ -5,7 +5,7 @@ from fastapi.responses import HTMLResponse
 
 app = FastAPI(title="Jump API",docs_url="/",openapi_url='/api/openapi.json',redoc_url=None)
 
-@app.get("/{url}")
+@app.get("/{url:path}")
 async def _(url: str):
     html = """
     <html>
