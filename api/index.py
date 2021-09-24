@@ -19,5 +19,5 @@ async def read_file(url: str):
     </script>
      <meta http-equiv="refresh" content="1;url={url}">
 </html>
-    """.replace("url={url}",f"url=https://cdn.jsdelivr.net/gh/linnian-bot/qwqwqqq/files/{url}")
+    """.replace("url={url}",f"url=https://cdn.jsdelivr.net/npm/qwqqwqqwqqwqqwq/files/{url}")
     return HTMLResponse(content=html,status_code=200)
